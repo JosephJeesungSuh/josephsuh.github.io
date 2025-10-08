@@ -53,6 +53,48 @@
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+    <tr onmouseout="gnn_stop()" onmouseover="gnn_start()" >
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='gnn_image'><video  width=100% muted autoplay loop>
+          <source src="images/gnn.png" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/gnn.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function gnn_start() {
+            document.getElementById('gnn_image').style.opacity = "1";
+          }
+
+          function gnn_stop() {
+            document.getElementById('gnn_image').style.opacity = "0";
+          }
+          gnn_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/xxxx.xxxxx">
+          <span class="papertitle">Rethinking LLM Human Simulation: When a Graph is What You Need
+</span>
+        </a>
+        <br>
+        <strong>Joseph Suh</strong>,
+        <a href="https://suhongmoon.github.io/">Suhong Moon</a>,
+        <a href="https://serinachang5.github.io/">Serina Chang</a>
+        <br>
+        <em>Under Review</em>
+        <br>
+        <a>arXiv (Coming Soon!)</a>
+        /
+        <a href="https://github.com/schang-lab/gems">Code</a>
+        <p></p>
+        <p>
+          We identify a broad class of human simulation tasks currently addressed with LLMs—discrete choice prediction—and propose a graph-based modeling that matches or exceeds LLM-based approaches while offering added advantages.
+        </p>          
+      </td>
+    </tr>
+
     <tr onmouseout="deeperbinding_stop()" onmouseover="deeperbinding_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
@@ -84,9 +126,10 @@
         <a href="https://sites.google.com/view/leeseunghyeong">Seung Hyeong Lee</a>,
         <a>Ayush Raj</a>,
         <strong>Joseph Suh</strong>,
-        <a href="https://dchan.cc/">David M. Chan</a>
+        <a href="https://dchan.cc/">David M. Chan</a>,
+        <a href="https://people.eecs.berkeley.edu/~jfc/">John Canny</a>
         <br>
-        <em>Preprint</em>, 2025
+        <em>CoLM</em>, 2025
         <br>
         <a href="https://arxiv.org/abs/2504.11673">arXiv</a>
         /
@@ -99,7 +142,7 @@
     </tr>
             
 
-    <tr onmouseout="subpop_stop()" onmouseover="subpop_start()" bgcolor="#ffffd0">
+    <tr onmouseout="subpop_stop()" onmouseover="subpop_start()" >
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
           <div class="two" id='subpop_image'><video  width=100% muted autoplay loop>
@@ -131,7 +174,7 @@
         <a href="https://joshuaminwookang.github.io/">Minwoo Kang</a>*,
         <a href="https://serinachang5.github.io/">Serina Chang</a>
         <br>
-        <em>ACL main</em>, 2025
+        <em>ACL long main</em>, 2025
         <br>
         <a href="https://arxiv.org/abs/2502.16761">arXiv</a>
         /
@@ -188,7 +231,7 @@
     </tr>
     
 
-    <tr onmouseout="anthology_stop()" onmouseover="anthology_start()" bgcolor="#ffffd0">
+    <tr onmouseout="anthology_stop()" onmouseover="anthology_start()" >
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
           <div class="two" id='anthology_image'><video  width=100% muted autoplay loop>
@@ -223,11 +266,13 @@
         <a href="https://dchan.cc/">David M. Chan</a>,
         <a href="https://people.eecs.berkeley.edu/~jfc/">John Canny</a>
         <br>
-        <em>EMNLP main</em>, 2024
+        <em>EMNLP long main</em>, 2024
         <br>
         <a href="https://arxiv.org/abs/2407.06576">arXiv</a>
         /
         <a href="https://github.com/CannyLab/anthology">Code</a>
+        /
+        <a href="https://bair.berkeley.edu/blog/2024/11/12/virutal-persona-llm/">Blog</a>
         <p></p>
         <p>
         We propose naturalistic bodies of text describing individual life stories, namely "backstories", as prefix to model prompts for persona conditioning.
@@ -299,7 +344,7 @@
           bog_stop()
         </script>
       </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
+      <td style="padding:8px;width:80%;vertical-align:middle" >
         <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.033803">
           <span class="papertitle">Photonic topological spin pump in synthetic frequency dimensions
 </span>
@@ -348,6 +393,7 @@
                 <td style="padding:16px;width:80%;vertical-align:middle">
                   <strong>Seoul National University</strong><br>
                   B.S. in Electrical & Computer Engineering<br>
+                  Advisor: <a href="https://waves.snu.ac.kr/people/professor">Prof. Sunkyu Yu</a><br>
                   03/2017 – 03/2023
                 </td>
               </tr>
