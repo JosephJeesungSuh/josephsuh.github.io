@@ -52,6 +52,47 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+    <tr onmouseout="cooperation_stop()" onmouseover="cooperation_start()" >
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='cooperation_image'><video  width=100% muted autoplay loop>
+          <source src="images/cooperation.png" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/cooperation.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function cooperation_start() {
+            document.getElementById('cooperation_image').style.opacity = "1";
+          }
+
+          function cooperation_stop() {
+            document.getElementById('cooperation_image').style.opacity = "0";
+          }
+          cooperation_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2601.16355">
+          <span class="papertitle">Identity, Cooperation and Framing Effects within Groups of Real and Simulated Humans
+</span>
+        </a>
+        <br>
+        <a href="https://suhongmoon.github.io/">Suhong Moon</a>*,
+        <a href="https://joshuaminwookang.github.io/">Minwoo Kang</a>*,
+        <strong>Joseph Suh</strong>,
+        <a href="https://www.linkedin.com/in/mustafasafdari/">Mustafa Safdari</a>,
+        <a href="https://people.eecs.berkeley.edu/~jfc/">John Canny</a>
+        <br>
+        <em>Under Review</em>
+        <br>
+        <a href="https://arxiv.org/abs/2601.16355">arXiv</a>
+        <p></p>
+        <p>
+          We analyze here how deep binding of pretrained base models with extended backstories leads to more faithful replication of identity-based behaviors.
+        </p>          
+      </td>
+    </tr>            
 
     <tr onmouseout="gnn_stop()" onmouseover="gnn_start()" >
       <td style="padding:16px;width:20%;vertical-align:middle">
@@ -74,7 +115,7 @@
         </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/xxxx.xxxxx">
+        <a href="https://arxiv.org/abs/2511.02135">
           <span class="papertitle">Rethinking LLM Human Simulation: When a Graph is What You Need
 </span>
         </a>
