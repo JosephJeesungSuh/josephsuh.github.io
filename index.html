@@ -52,6 +52,50 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+    <tr onmouseout="usersim_stop()" onmouseover="usersim_start()" bgcolor="#ffffd0">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='usersim'><video  width=100% muted autoplay loop>
+          <source src="images/usersim.png" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/usersim.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function usersim_start() {
+            document.getElementById('usersim').style.opacity = "1";
+          }
+
+          function usersim_stop() {
+            document.getElementById('usersim').style.opacity = "0";
+          }
+          usersim_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2605.09808">
+          <span class="papertitle">Quantifying the Utility of User Simulators for Building Collaborative LLM Assistants
+</span>
+        </a>
+        <br>
+        <strong>Joseph Suh</strong>,
+        <a>Ayush Raj</a>,
+        <a href="https://joshuaminwookang.github.io/">Minwoo Kang</a>,
+        <a href="https://serinachang5.github.io/">Serina Chang</a>
+        <br>
+        <em>Preprint</em>
+        <br>
+        <a href="https://arxiv.org/abs/2605.09808">arXiv</a>
+        /
+        <a href="https://github.com/schang-lab/utility-of-user-simulators">Code</a>
+        <p></p>
+        <p>
+          With controlled experiments, we show how simulator quality can be quantified in terms of its downstream utility:
+          how an LLM assistant trained with this user simulator performs when interacting with real humans.
+        </p>          
+      </td>
+    </tr>
+
     <tr onmouseout="cooperation_stop()" onmouseover="cooperation_start()" >
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
@@ -84,7 +128,7 @@
         <a href="https://www.linkedin.com/in/mustafasafdari/">Mustafa Safdari</a>,
         <a href="https://people.eecs.berkeley.edu/~jfc/">John Canny</a>
         <br>
-        <em>Under Review</em>
+        <em>Preprint</em>
         <br>
         <a href="https://arxiv.org/abs/2601.16355">arXiv</a>
         <p></p>
