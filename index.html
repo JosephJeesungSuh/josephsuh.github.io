@@ -52,6 +52,51 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+    <tr onmouseout="anamesis_stop()" onmouseover="anamesis_start()" >
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='anamesis'><video  width=100% muted autoplay loop>
+          <source src="images/anamesis.png" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/anamesis.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function anamesis_start() {
+            document.getElementById('anamesis').style.opacity = "1";
+          }
+
+          function anamesis_stop() {
+            document.getElementById('anamesis').style.opacity = "0";
+          }
+          anamesis_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2607.10628">
+          <span class="papertitle">Anamnesis: An Open-Source Platform for Large-Scale Backstory-Conditioned Survey Simulation
+</span>
+        </a>
+        <br>
+        <a href="https://vaclis.net/">Song-Ze Yu</a>,
+        <strong>Joseph Suh</strong>,
+        <a href="https://serinachang5.github.io/">Serina Chang</a>,
+        <a href="https://dchan.cc/">David M. Chan</a>
+        <br>
+        <em>EMNLP demo, 2026</em>
+        <br>
+        <a href="https://arxiv.org/abs/2607.10628">arXiv</a>
+        /
+        <a href="https://www.youtube.com/ watch?v=j5yrnJl287g">Demo</a>
+        /
+        <a href="https://simulate.group">Website</a>
+        <p></p>
+        <p>
+          We present an open-source interactive platform for demographically controllable survey simulation using backstory-conditioned large language models.
+        </p>          
+      </td>
+    </tr>
+
     <tr onmouseout="usersim_stop()" onmouseover="usersim_start()" bgcolor="#ffffd0">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
@@ -128,9 +173,9 @@
         <a href="https://www.linkedin.com/in/mustafasafdari/">Mustafa Safdari</a>,
         <a href="https://people.eecs.berkeley.edu/~jfc/">John Canny</a>
         <br>
-        <em>Preprint</em>
+        <em>CoLM</em>, 2026
         <br>
-        <a href="https://arxiv.org/abs/2601.16355">arXiv</a>
+        <a href="https://openreview.net/attachment?id=rgAWjWtWbz&name=pdf">OpenReview</a>
         <p></p>
         <p>
           We analyze here how deep binding of pretrained base models with extended backstories leads to more faithful replication of identity-based behaviors.
@@ -467,7 +512,7 @@
               <tr>
                 <td style="padding:16px;width:80%;vertical-align:middle">
                   <strong>Microsoft Research, Redmond</strong><br>
-                  AI Interaction and Learning / Deep Learning Group<br>
+                  AI Interaction and Learning Group<br>
                   05/2026 – 
                 </td>
               </tr>
@@ -477,7 +522,7 @@
                   Berkeley Artificial Intelligence Research Lab (BAIR)<br>
                   Advisors: <a href="https://serinachang5.github.io/">Prof. Serina Chang</a> and 
                   <a href="https://people.eecs.berkeley.edu/~jfc/">Prof. John Canny</a><br>
-                  09/2023 – 05/2026
+                  09/2023 –
                 </td>
               </tr>
               <tr>
