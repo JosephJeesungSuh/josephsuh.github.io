@@ -52,7 +52,48 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-    <tr onmouseout="tandem_stop()" onmouseover="tandem_start()" bgcolor="#ffffd0">
+    <tr onmouseout="signature_stop()" onmouseover="signature_start()" bgcolor="#ffffd0">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='signature'><video  width=100% muted autoplay loop>
+          <source src="images/figure_dataset_classification.png" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/figure_dataset_classification.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function signature_start() {
+            document.getElementById('signature').style.opacity = "1";
+          }
+          function signature_stop() {
+            document.getElementById('signature').style.opacity = "0";
+          }
+          signature_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2610.05534v1">
+          <span class="papertitle">Dataset Signatures in Human-LLM Interactions and User Modeling
+</span>
+        </a>
+        <br>
+        <strong>Joseph Suh</strong>,
+        <a href="https://serinachang5.github.io/">Serina Chang</a>
+        <br>
+        <em>Preprint</em>
+        <br>
+        <a href="https://arxiv.org/abs/2610.05534v1">arXiv</a>
+        /
+        <a href="https://github.com/JosephJeesungSuh/dataset-signature-human-llm">Code</a>
+        <p></p>
+        <p>
+          Human-LLM conversation datasets shape how we understand AI use and train user models, but how different are the interactions they capture?
+          We study seven datasets and find distinctive dataset signatures: classifiers can identify a conversation's source from user messages alone, well above chance.
+        </p>          
+      </td>
+    </tr>
+
+    <tr onmouseout="tandem_stop()" onmouseover="tandem_start()" >
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
           <div class="two" id='tandem'><video  width=100% muted autoplay loop>
@@ -97,7 +138,6 @@
         </p>          
       </td>
     </tr>
-
 
     <tr onmouseout="usersim_stop()" onmouseover="usersim_start()" bgcolor="#ffffd0">
       <td style="padding:16px;width:20%;vertical-align:middle">
