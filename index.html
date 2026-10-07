@@ -25,8 +25,8 @@
                 <p>
                   Hi there! I'm a third year Ph.D. student at <a href="https://bair.berkeley.edu/">BAIR</a> in UC Berkeley, advised by <a href="https://serinachang5.github.io/">Serina Chang</a> and <a href="https://people.eecs.berkeley.edu/~jfc/">John Canny</a>.
                 <br>
-                  Most of my recent research is about language models as models of human behavior, spanning around opinions, actions, preferences, and temporal changes.
-                  Training to generate human language leads to understanding, generation, and alignment with humans all at once: what can we build on top of that for socially and cognitively aligned NLP systems?
+                  Most of my recent research is on user simulation and synthetic data generation for interactive evaluation and training of language models.
+                  I'm betting on user simulation as a scalable path to align language models with human goals.
                 </p>
                 <p>                  
                 </p>
@@ -51,6 +51,53 @@
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+    <tr onmouseout="tandem_stop()" onmouseover="tandem_start()" bgcolor="#ffffd0">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='tandem'><video  width=100% muted autoplay loop>
+          <source src="images/tandem.png" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/tandem.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function tandem_start() {
+            document.getElementById('tandem').style.opacity = "1";
+          }
+          function tandem_stop() {
+            document.getElementById('tandem').style.opacity = "0";
+          }
+          tandem_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2609.22607v1">
+          <span class="papertitle">Pretrained Persona Mixture Models and Tandem Models for Human Simulation
+</span>
+        </a>
+        <br>
+        <a href="https://joshuaminwookang.github.io/">Minwoo Kang</a>,
+        <a href="https://teaywright.github.io/">Téa Wright</a>,
+        <a href="https://seuneisape.github.io/">Seun Eisape</a>,
+        <a>Ayush Raj</a>,
+        <a href="https://suhongmoon.github.io/">Suhong Moon</a>,
+        <strong>Joseph Suh</strong>,
+        <a href="https://www.alanesuhr.com/">Alane Suhr</a>,
+        <a href="https://dchan.cc/">David M. Chan</a>,
+        <a href="https://people.eecs.berkeley.edu/~jfc/">John Canny</a>
+        <br>
+        <em>Preprint</em>
+        <br>
+        <a href="https://arxiv.org/abs/2609.22607v1">arXiv</a>
+        <p></p>
+        <p>
+          We argue that the current dominant practice in LLM human simulation, prompting instruction-tuned “assistant” language models to role-play personas, is inaccurate and produces stereotyped predictions.
+          We propose and explore tandem models which combine a pre-trained model with an instruction-tuned supervisor.
+        </p>          
+      </td>
+    </tr>
+
 
     <tr onmouseout="usersim_stop()" onmouseover="usersim_start()" bgcolor="#ffffd0">
       <td style="padding:16px;width:20%;vertical-align:middle">
